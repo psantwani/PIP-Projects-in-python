@@ -57,7 +57,7 @@ def quit():
 	sys.exit("Quitting..")
 
 if __name__ == '__main__':
-	print('Select operation - \n 1:add \n 2:subtract \n 3:multiply \n 4:divide \n 5:Quit')
+	print('Select operation - \n 1:add \n 2:subtract \n 3:multiply \n 4:divide \n 5:Quit ')
 	operation = 0
 	while operation != 5 or EOFError:		
 		operation = input('Your choice: ')		
