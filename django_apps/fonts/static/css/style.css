@@ -1,0 +1,18 @@
+li{
+	line-height: 50px;
+}	
+ul{
+	list-style-type: circle;
+}
+div{
+	padding: 10px;
+}
+input{
+	padding: 6px;
+}
+button{
+	padding: 6px;
+}
+p{
+	font-size: 30px;
+}
