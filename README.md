@@ -13,6 +13,7 @@
 11. Pascal's triangle
 12. Recursion - basic examples
 13. Sieve of Eratosthenes - Get all prime numbers from 0 to N
+14. Sorting Methods - Bubble, Selection, Insertion
 
 # Django Apps
 1. Polls
