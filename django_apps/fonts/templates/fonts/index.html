@@ -1,0 +1,47 @@
+<style type="text/css">
+	li{
+		line-height: 50px;
+	}	
+	ul{
+		list-style-type: circle;
+	}
+	div{
+		padding: 10px;
+	}
+	input{
+		padding: 6px;
+	}
+	button{
+		padding: 6px;
+	}
+	p{
+		font-size: 30px;
+	}
+</style>
+
+<p>Your system is loaded with the following fonts</p>
+
+<div>
+	<input type="text" id="user_input" placeholder="Enter Text">
+	<button id="submit">Submit</button>	
+</div>
+
+{% if fontList %}
+    <ul>
+    {% for font in fontList %}
+        <li>{{ font }} - <span class='spans' style="font-family: {{ font }}">Sample Text</span></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No fonts are available.</p>
+{% endif %}
+
+<script type="text/javascript">
+	document.getElementById("submit").onclick = function(event){
+		spans = document.getElementsByClassName( "spans" );
+		text = document.getElementById("user_input").value;
+		[].slice.call( spans ).forEach(function ( span ) {
+    		span.innerHTML = text;
+		});
+	}
+</script>
